@@ -585,7 +585,7 @@ function MultiKDA(RECENT_MATCHES) {
     for(z=0; z< dataTempArray.length;z++){
         sum_minions_killed += dataTempArray[z];
     }
-    sum_minions_killed /= 40;
+    sum_minions_killed /= 100;
     document.getElementById('avg_cs').innerHTML = (sum_minions_killed);
     //CreeperScoreThingy(2667756393);
     //
