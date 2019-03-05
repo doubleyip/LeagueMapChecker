@@ -568,9 +568,9 @@ function MultiKDA(RECENT_MATCHES) {
         dataTempArray.push(dataTemp);
     }
 
-    dataKills /= json.participants.length;
-    dataDeaths /= json.participants.length;
-    dataAssists /= json.participants.length;
+    dataKills /= 40;
+    dataDeaths /= 40;
+    dataAssists /= 40;
 
     // HERE HERE HERE again
     //var win_percent = parseInt(winCount/20*100);
@@ -585,7 +585,7 @@ function MultiKDA(RECENT_MATCHES) {
     for(z=0; z< dataTempArray.length;z++){
         sum_minions_killed += dataTempArray[z];
     }
-    sum_minions_killed /= 20;
+    sum_minions_killed /= 40;
     document.getElementById('avg_cs').innerHTML = (sum_minions_killed);
     //CreeperScoreThingy(2667756393);
     //
