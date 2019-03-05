@@ -568,12 +568,13 @@ function MultiKDA(RECENT_MATCHES) {
         dataTempArray.push(dataTemp);
     }
 
-    dataKills /= 20;
-    dataDeaths /= 20;
-    dataAssists /= 20;
+    //dataKills /= 20;
+    //dataDeaths /= 20;
+    //dataAssists /= 20;
 
     // HERE HERE HERE again
-    var win_percent = parseInt(winCount/20*100);
+    //var win_percent = parseInt(winCount/20*100);
+	var win_percent = parseInt(winCount/100);
     //
     var kda_rate = (dataKills + dataAssists) / dataDeaths;
     kda_rate = Math.round(100*kda_rate)/100;
