@@ -174,7 +174,7 @@ function SummonerProfile(summoner_id){
 
 
     $.ajax({
-            url: 'change this for summoner id  ---/lol/league/v3/leagues/by-summoner/{summonerId}' + curSummonerID,
+            url: 'https://nodejslolmc1.herokuapp.com/getLeague?id=' + GlobalAccountID,
             type: 'GET',
             dataType: 'json',
             data: {
